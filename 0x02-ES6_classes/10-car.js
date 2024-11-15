@@ -8,34 +8,6 @@ export default class Car {
     this._color = color;
   }
 
-  // getters and setters
-  get brand() {
-    return this._brand;
-  }
-
-  set brand(value) {
-    if (typeof value !== 'string') throw new Error();
-    this._brand = value;
-  }
-
-  get motor() {
-    return this._motor;
-  }
-
-  set motor(value) {
-    if (typeof value !== 'string') throw new Error();
-    this._motor = value;
-  }
-
-  get color() {
-    return this._color;
-  }
-
-  set color(value) {
-    if (typeof value !== 'string') throw new Error();
-    this._color = value;
-  }
-
   //  method returns a new object of the class
   cloneCar() {
     return new this.constructor(this._brand, this._motor, this._color);
